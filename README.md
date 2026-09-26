@@ -4,14 +4,14 @@ A modular, Python-based voice assistant that listens for a wake word, understand
 
 ## Features
 
-- **Wake-word activation** — say "Jarvis" to start a session
-- **Web search** — search Google by voice
-- **Open websites** — open predefined sites by name
-- **Play music** — play songs on YouTube via voice command
-- **Tell the time** — ask what time it is
-- **Notes** — write and read back notes
-- **News headlines** — reads out the latest top headlines (via NewsAPI)
-- **Interruptible speech** — say "stop" while Jarvis is talking to interrupt it immediately, powered by a background thread that listens in parallel with speaking
+- **Wake-word activation**  say "Jarvis" to start a session
+- **Web search** - search Google by voice
+- **Open websites** - open predefined sites by name
+- **Play music** - play songs on YouTube via voice command
+- **Tell the time** - ask what time it is
+- **Notes** - write and read back notes
+- **News headlines** - reads out the latest top headlines (via NewsAPI)
+- **Interruptible speech** - say "stop" while Jarvis is talking to interrupt it immediately, powered by a background thread that listens in parallel with speaking
 
 ## Architecture
 
@@ -83,16 +83,16 @@ Say **"Jarvis"** to wake it up, then try:
 - *"what time is it"*
 - *"write buy groceries tomorrow"*
 - *"read notes"*
-- *"news"* — say **"stop"** any time while it's talking to interrupt
+- *"news"* - say **"stop"** any time while it's talking to interrupt
 
 ## Tech stack
 
-- `speech_recognition` — speech-to-text (Google Web Speech API)
-- `pyttsx3` — offline text-to-speech
-- `pywhatkit` — YouTube playback
-- `requests` — NewsAPI integration
-- `python-dotenv` — environment variable management
-- `threading` — concurrent listen-while-speaking for interruption
+- `speech_recognition` - speech-to-text (Google Web Speech API)
+- `pyttsx3` - offline text-to-speech
+- `pywhatkit` - YouTube playback
+- `requests` - NewsAPI integration
+- `python-dotenv` - environment variable management
+- `threading` - concurrent listen-while-speaking for interruption
 
 ## Future improvements
 
