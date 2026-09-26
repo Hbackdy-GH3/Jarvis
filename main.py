@@ -1,5 +1,5 @@
 import time
-from core.speech import listen, speak
+from core.speech import listen, speak, speak1
 from core.router import route
 import config
 import speech_recognition as sr
@@ -11,7 +11,7 @@ def run():
             text = listen()
             print(text)
             if config.wake_word in text.lower().split():
-                speak("Yes!, how can i help you")
+                speak1("Yes!, how can i help you")
                 jarvis_active = time.time() + config.active
 
                 while time.time() < jarvis_active:
@@ -26,11 +26,12 @@ def run():
                         continue
                     except Exception as e:
                         print(f"Error: {e}")
-
+                        continue
                 speak("Going to sleep")
 
         except Exception as e:
             print(f"Error: {e}")
+        
 
 
 if __name__ == "__main__":

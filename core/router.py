@@ -3,6 +3,7 @@ from skills.media import play
 from core.speech import speak
 from skills.time import time_now
 from skills.notes import add_note, read_note
+from skills.news import read_titles
 
 TRIGGERS = {
     "search": search,
@@ -10,7 +11,9 @@ TRIGGERS = {
     "play": play,
     "time": time_now,
     "write":add_note,
-    "read":read_note
+    "read":read_note,
+    "news": read_titles
+    
 }
 
 
